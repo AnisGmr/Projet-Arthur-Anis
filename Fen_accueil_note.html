@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles2.css", type="text/css">
+    <script src="script2.js"> </script>
+
+</head>
+
+<body>
+    <div id="pop_up_accueil">
+    <form>
+    <select id="spécialité1" onchange="changement1()">
+        <option value="Math"> Math </option>
+        <option value="Physique"> Physique </option>
+        <option value="NSI"> NSI </option>
+    </select>
+    
+    
+    <select id="spécialité2" onchange="changement2()">
+        <option value="Math"> Math </option>
+        <option value="Physique"> Physique </option>
+        <option value="NSI"> NSI </option>
+    </select>
+<label id="Tes_Spé">Qu'elles sont tes spécialités?</label>
+<label id="Tes_Notes">Qu'elles sont tes notes?</label>
+<input id="Note_1" type="text" name="note1"/>
+<input id="Note_2" type="text" name="note2"/>
+<button type="button" id="Valider_note" onClick="PopUp('hide')">  Valider  </button> 
+</form>
+<button type="button" id="Passer" onClick="PopUp('hide')"> Passer </button> 
+</div>
+    
+</body>
+</html>

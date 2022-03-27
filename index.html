@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" , type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Step</title>
+</head>
+
+<body>
+
+    <nav id="header">
+        <h1 class="push"><span>NEXT </span><span>STEP </span></h1>
+        <div class="Sommaire"></div>
+        <a href="index.html" class="entete">SPECIALITE</a>
+        <a href="#boite" class="entete">RECOMMENDATION</a>
+        <a href="index2.html" class="entete">CARTE</a>
+        <div class="lignes">
+            <div class="l1"></div>
+            <div class="l2"></div>
+            <div class="l3"></div>
+        </div>
+    </nav>
+
+    <div class="intro">
+        <div class="pres">QUE FAIRE APRES LE BAC ?</div>
+        <button class="btn" onClick="PopUp('show')">COMMENCER</button>
+    </div>
+
+    <div class="info">
+        <div class="t">
+            <p>À l’heure du choix, il est parfois difficile de s’y retrouver.
+                Que vous sachiez déjà un peu (ou totalement) vers quels secteur et métier vous voulez vous orienter ou
+                que vous soyez totalement perdu,
+                ce site va vous aider ! Prépa, BTS, DUT, université, grande école… nous allons vous épauler pour
+                choisir votre filière et votre voie.
+                Suivez le guide et posez-vous les bonnes questions !
+                Après une spécialité NSI, les voies possibles sont nombreuses. En effet, il s’agit d’un enseignement
+                qui touche plusieurs secteurs comme le marketing, les mathématiques, l’informatique, l’industrie du numérique…
+                En fonction du chemin que vous emprunterez, il est donc primordial de ne pas négliger la seconde spécialité choisie en terminale.
+                En général, la voie que les étudiants suivent le plus sont les études universitaires ou les écoles spécialisées.
+                Toutefois, certains optent pour des prépas ou encore pour des études plus courtes comme les BTS.
+            </p>
+        </div>
+    </div>
+
+    <div id="boite">
+        <div class="r0">
+            <div class="rr0 rr1">qssfsfsdfsfsdqqsss</div>
+            <img class="b0 b1" src="Louis.jpg">
+        </div>
+        <div class="r0">
+            <div class="rr0 rr2">qdssdqfqfdf</div>
+            <img class="b0 b2" src="PV.jpg">
+        </div>
+        <div class="r0">
+            <div class="rr00 rr3">qsdfsqdfqsfsqdf</div>
+            <img class="b0 b3" src="FSM.jpg">
+        </div>
+        <div class="r0">
+            <div class="rr00 rr4">sqfsdfqsdfsdfs</div>
+            <img class="b0 b4" src="Janson de Sailly.jpg">
+        </div>
+    </div>
+
+
+    <div class="boite2">
+        <div class="t0">
+            <div class="t1">
+                <div class="CP">Classes Préparatoires</div>
+                <div class="spe1">La classe préparatoire scientifique est la prépa conseillée aux étudiants qui ont opté pour une spé NSI au baccalauréat. 
+                    En effet, à l’issue des deux années de prépa MPSI ou prépa ingénieur, les étudiants pourront intégrer une école d’ingénieur par exemple. 
+                    En plus de fournir les enseignements nécessaires à la compréhension des mathématiques, de la physique et des sciences, elles préparent également les bacheliers aux concours communs pour devenir ingénieur. 
+                    La classe préparatoire est donc une voie à ne pas négliger puisqu’elle prépare au mieux les étudiants à entrer dans le monde de l’enseignement supérieur. </div>
+            </div>
+
+            <div class="t1">
+                <div class="CP">Suivre un cursus universitaire</div>
+                <div class="spe1">Le côté public et plus accessible des universités attire davantage de bacheliers juste après le lycée. 
+                    C’est donc une bonne voie à prendre en compte si vous souhaitez faire des études longues et diplômantes.
+                    Parmi les licences que vous pourrez suivre après le bac, il en existe plusieurs <a href="#" >ici</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="boite3">
+        <div class="boite4">
+        <table class="tab">
+            <tbody>
+                <tr>
+                    <td class="td3">Accès</td>
+                    <td class="td1">Classement Prépas MP2I</td>
+                </tr>
+                <tr>
+                    <td>4%</td>
+                    <td class="td2">I.Louis Le Grand</td>
+                </tr>
+                <tr>
+                    <td>9%</td>
+                    <td class="td2">II.Hoche</td>
+                </tr>
+                <tr>
+                    <td>9%</td>
+                    <td class="td2">III.Saint Louis</td>
+                </tr>
+                <tr>
+                    <td>13%</td>
+                    <td class="td2">IV.Janson de Sailly</td>
+                </tr>
+                <tr>
+                    <td>26%</td>
+                    <td class="td2">V.Fénelon Sainte-Marie</td>
+                </tr>
+                <tr>
+                    <td>45%</td>
+                    <td class="td2">VI.Paul Valery</td>
+                </tr>
+            </tbody>
+        </div>
+    </div>
+
+    <div id="pop_up_accueil">
+        <form>
+            <select id="spécialité1" onchange="changement1()">
+                <option value="None">Spécialité 1</option>
+                <option value="Math"> Math </option>
+                <option value="Physique"> Physique </option>
+                <option value="NSI"> NSI </option>
+            </select>
+
+
+            <select id="spécialité2" onchange="changement2()">
+                <option value="None">Spécialité 2</option>
+                <option value="Math"> Math </option>
+                <option value="Physique"> Physique </option>
+                <option value="NSI"> NSI </option>
+            </select>
+            <label id="Tes_Spé">Quelles sont vos SPECIALITES ?</label>
+            <label id="Erreur">Erreur ! Vérifiez bien vos informations.</label>
+
+            <label id="Tes_Notes">Quelles sont vos notes ?</label>
+            <input id="Note_1" type="text" name="note1" />
+            <input id="Note_2" type="text" name="note2" />
+            <button type="button" id="Valider_note" onClick="vérification()"> Valider </button>
+        </form>
+        <button type="button" id="Passer" onClick="PopUp('Phide')"> Retour </button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

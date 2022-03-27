@@ -1,0 +1,246 @@
+    
+A remplacer dans un texte déja existant <button class="btn" onClick="PopUp('show')">COMMENCER</button>
+
+
+
+
+<div id="pop_up_accueil">
+    <form>
+    <select id="spécialité1" onchange="changement1()">
+        <option value="None">Spécialité 1</option>
+        <option value="Math"> Math </option>
+        <option value="Physique"> Physique </option>
+        <option value="NSI"> NSI </option>
+    </select>
+    
+    
+    <select id="spécialité2" onchange="changement2()">
+        <option value="None">Spécialité 2</option>
+        <option value="Math"> Math </option>
+        <option value="Physique"> Physique </option>
+        <option value="NSI"> NSI </option>
+    </select>
+<label id="Tes_Spé">Qu'elles sont tes spécialités?</label>
+<label id="Erreur">Erreur vérifie bien tes informations</label>
+
+<label id="Tes_Notes">Qu'elles sont tes notes?</label>
+<input id="Note_1" type="text" name="note1"/>
+<input id="Note_2" type="text" name="note2"/>
+<button type="button" id="Valider_note" onClick="vérification()">  Valider  </button> 
+</form>
+<button type="button" id="Passer" onClick="PopUp('Phide')"> Annuler </button> 
+</div>
+
+
+#pop_up_accueil{
+  background-color: black;
+  width:20vw;
+  height: 40vh;
+  position: absolute;
+  top:30vh;
+  left: 40vw;
+  z-index: 1001;
+}
+
+#spécialité1{
+  position: absolute;
+  top:20%;
+  left:20%;
+  background-color: black;
+  color:white;
+  width: 20%;
+}
+
+#spécialité2{
+  position: absolute;
+  top:20%;
+  right:20%;
+  background-color: black;
+  color:white;
+  width: 20%;
+}
+
+#Tes_Spé{
+  text-align: center;
+  position: absolute;
+  top:5%;
+  right:50%;
+  background-color: black;
+  color:white;
+  width: 100%;
+  transform: translate(50%,0%);
+
+}
+
+#Note_1{
+  background-color: black;
+  position: absolute;
+  top:40%;
+  left:20%;
+  width:20%;
+  color:white;
+}
+
+#Note_2{
+  background-color: black;
+  position: absolute;
+  top:40%;
+  right:20%;
+  width:20%;
+  color:white;
+}
+
+#Valider_note{
+  position: absolute;
+  top:60%;
+  right:50%;
+  background-color: black;
+  color:white;
+  width: 50%;
+  transform: translate(50%,0%);
+
+}
+
+#Passer{
+  position: absolute;
+  bottom:10%;
+  right:50%;
+  background-color: black;
+  color:white;
+  width: 50%;
+  transform: translate(50%,0%);
+
+}
+
+#Tes_Notes{
+  text-align: center;
+  position: absolute;
+  top:30%;
+  right:50%;
+  background-color: black;
+  color:white;
+  width: 100%;
+  transform: translate(50%,0%);
+
+
+}
+
+#Erreur{  
+  text-align: center;
+  position: absolute;
+  top:-10%;
+  right:50%;
+  background-color: white;
+  color:red;
+  width: 100%;
+  transform: translate(50%,0%);
+  z-index: 1001;
+
+
+}
+
+
+
+
+const titreSpans = document.querySelectorAll('h1 span');
+const l1 = document.querySelector(".l1");
+const l2 = document.querySelector(".l2");
+const l3 = document.querySelector(".l3");
+let spé1="None"
+let spé2="None"
+let note1=0
+let note2=0
+let Niveau_Moyen=0
+
+window.onload = function () {
+    setTimeout(function () {
+        document.getElementById('Erreur').style.display = "none",
+        PopUp("Phide")
+    },);}
+
+window.addEventListener('load', () => {
+
+    const TL = gsap.timeline({ paused: true });
+    
+    TL.staggerFrom(titreSpans, 1, { top: -50, opacity: 0, ease: "power2.out" }, 0.3)
+    .from(l1, 0.75, {width:0, ease: "power2.out"})
+    .from(l2, 0.75, {width:0, ease: "power2.out"})
+    .from(l3, 0.75, {width:0, ease: "power2.out"})
+    
+
+    TL.play();
+
+})
+   
+function PopUp(hideOrshow) {
+    if (hideOrshow == 'hide') document.getElementById('pop_up_accueil').style.display = "none",
+    note1=document.getElementById("Note_1").value,
+    note2=document.getElementById("Note_2").value,
+    
+    Calcul_Niveau_Moyen(),
+    console.log(spé2),
+    console.log(spé1),
+    console.log(note1),
+    console.log(note2);
+
+    else if (hideOrshow == "Phide") 
+    document.getElementById('pop_up_accueil').style.display = "none",
+    note1="None",
+    note2="None",
+    spé1="None",
+    spé2="None",
+    console.log(spé2),
+    console.log(spé1),
+    console.log(note1),
+    console.log(note2);
+
+    else document.getElementById('pop_up_accueil').removeAttribute('style'),
+    spé1=document.getElementById("spécialité1").value,
+    spé2=document.getElementById("spécialité2").value,
+    console.log(1);
+
+}
+
+
+function changement1(){
+ spé1=document.getElementById("spécialité1").value;
+}
+
+function changement2(){
+    spé2=document.getElementById("spécialité2").value;
+    }
+    
+
+function vérification(){
+    
+    note1=document.getElementById("Note_1").value,
+    note2=document.getElementById("Note_2").value,
+    console.log(spé2),
+    console.log(spé1),
+    console.log(note1),
+    console.log(note2);
+
+    
+    if (note1>20 || note2>20 || spé1 === "None" || spé2 === "None" || spé1===spé2)
+    document.getElementById('Erreur').removeAttribute('style'),
+    console.log("error");
+
+    else 
+    document.getElementById('Erreur').style.display = "none",
+    PopUp("hide");
+}
+
+function Calcul_Niveau_Moyen(){
+    
+    Niveau_Moyen=(note1+note2)/2;
+}
+
+
+
+
+
+
+
+
+
+

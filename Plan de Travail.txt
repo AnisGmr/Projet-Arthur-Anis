@@ -1,0 +1,32 @@
+Plan de travail : 
+ - 1.Recherche formation(post-bac,écoles,prépa,fac...) 
+ - 2.idées du site *
+        Ex : dico (clé:ville, values:écoles)
+             Types d'écoles(distance ville-écoles) 
+             Image qui renvoit l'école 
+             compteur numero(space x)
+             (barre de recherche) 
+             barre en dégradé
+             recommendation (selon tes notes)
+             + possibilité de s'inscrire 
+             Appuie logo gauche -> ramène au début
+
+ - 3.design 
+      -voir paint accueil 
+
+ - 4.code 
+ - 5.Word presentation (sources URL) 
+ - 6.Oral (powerpoint,ce qu'on doit dire) 
+ - 7. Exemple de site : Space x, Tesla, Apple
+
+
+
+
+Prépas MP2I région Parisienne:
+			Ville		Place	Taux d'accès	Adresse			Classement
+-Lycée Louis Le Grand	Paris V		48	4 % 		123 Rue Saint-Jacques	1
+-Lycée Hoche		Versailles		48	9 %		73 Av. de Saint-Cloud	2
+-Lycée Saint Louis		Paris VI		48	9 %		44 Bd Saint-Michel		3
+-Lycée Janson de Sailly	Paris XVI		48	13 %		106 Rue de la Pompe	7
+-Lycée Fénelon Sainte-Marie	Paris VIII		40	26 %		95 bis Rue de Monceau	14
+-Lycée Paul Valery		Paris XII		48	45 %		38 Bd Soult		20
