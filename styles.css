@@ -187,6 +187,7 @@ h1 span {
   border-radius : 10px 10px 10px 10px;
   margin : 2vw;
   text-align :center;
+  background: none;
 }
 
 
@@ -245,7 +246,26 @@ h1 span {
   padding:2vw;
   z-index: 2;
   overflow: hidden;
+}
 
+.rr0 h2{
+  opacity: 0;
+  transition: 1s;
+}
+
+.rr0 h2:hover{
+  opacity: 1;
+  transition: 2s;
+}
+
+.rr00 h2{
+  opacity: 0;
+  transition: 1s;
+}
+
+.rr00 h2:hover{
+  opacity: 1;
+  transition: 2s;
 }
 
 .rr1{
