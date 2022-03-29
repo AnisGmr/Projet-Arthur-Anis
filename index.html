@@ -11,15 +11,15 @@
 <body>
 
     <nav id="header">
-        <h1 class="push"><span>NEXT </span><span>STEP </span></h1>
+        <h1 class="push v1 titre"><span>NEXT </span><span>STEP </span></h1>
         <div class="Sommaire"></div>
-        <a href="index.html" class="entete">SPECIALITE</a>
-        <a href="#boite" class="entete">RECOMMENDATION</a>
-        <a href="index2.html" class="entete">CARTE</a>
+        <a href="index.html" class="entete e1">SPECIALITE</a>
+        <a href="#boite" class="entete e1">RECOMMENDATION</a>
+        <a href="index2.html" class="entete e1">CARTE</a>
         <div class="lignes">
-            <div class="l1"></div>
-            <div class="l2"></div>
-            <div class="l3"></div>
+            <div class="l1 c1"></div>
+            <div class="l2 c1"></div>
+            <div class="l3 c1"></div>
         </div>
     </nav>
 
@@ -28,7 +28,6 @@
         <button class="btn" onClick="PopUp('show')">COMMENCER</button>
     </div>
 
-    <div class="info">
         <div class="t">
             <p>À l’heure du choix, il est parfois difficile de s’y retrouver.
                 Que vous sachiez déjà un peu (ou totalement) vers quels secteur et métier vous voulez vous orienter ou
@@ -43,23 +42,28 @@
                 Toutefois, certains optent pour des prépas ou encore pour des études plus courtes comme les BTS.
             </p>
         </div>
-    </div>
 
     <div id="boite">
-        <div class="r0">
-            <div class="rr0 rr1"><h2>Louis Le Grand</h2></div>
+        <div class="r0 image-1">
+                <div class="rr0 rr1">
+                    <h2>Louis Le Grand</h2>
+                    <div class="barrerecommendation"><div class="barre DeLouis"> </div> <div class="texte-barre"> Chance d'admission</div> </div>
+                </div>
             <img class="b0 b1" src="Images/Louis.jpg">
         </div>
-        <div class="r0">
-            <div class="rr0 rr2"><h2>Paul Valery</h2></div>
+        <div class="r0 image-2">
+            <div class="rr0 rr2"><h2>Paul Valery</h2>
+                <div class="barrerecommendation"><div class="barre DePaul"> </div> <div class="texte-barre"> Chance d'admission</div> </div></div>
             <img class="b0 b2" src="Images/PV.jpg">
         </div>
-        <div class="r0">
-            <div class="rr00 rr3"><h2>Fénelon Sainte-Marie</h2></div>
+        <div class="r0 image-3">
+            <div class="rr00 rr3"><h2>Fénelon Sainte-Marie</h2>
+                <div class="barrerecommendation"><div class="barre DeMarie"> </div> <div class="texte-barre"> Chance d'admission</div> </div></div>
             <img class="b0 b3" src="Images/FSM.jpg">
         </div>
-        <div class="r0">
-            <div class="rr00 rr4"><h2>Janson de Sailly</h2></div>
+        <div class="r0 image-4">
+            <div class="rr00 rr4"><h2>Janson de Sailly</h2>
+                <div class="barrerecommendation"><div class="barre DeJanson"> </div> <div class="texte-barre"> Chance d'admission</div> </div></div>
             <img class="b0 b4" src="Images/Janson de Sailly.jpg">
         </div>
     </div>
@@ -79,7 +83,7 @@
                 <div class="CP">Suivre un cursus universitaire</div>
                 <div class="spe1">Le côté public et plus accessible des universités attire davantage de bacheliers juste après le lycée. 
                     C’est donc une bonne voie à prendre en compte si vous souhaitez faire des études longues et diplômantes.
-                    Parmi les licences que vous pourrez suivre après le bac, il en existe plusieurs <a href="#" >ici</a>.
+                    Parmi les licences que vous pourrez suivre après le bac, il en existe plusieurs <a href="index3.html" >ici</a>.
                 </div>
             </div>
         </div>
@@ -87,38 +91,9 @@
 
 
     <div class="boite3">
-        <div class="boite4">
-        <table class="tab">
-            <tbody>
-                <tr>
-                    <td class="td3">Accès</td>
-                    <td class="td1">Classement Prépas MP2I</td>
-                </tr>
-                <tr>
-                    <td>4%</td>
-                    <td class="td2">I.Louis Le Grand</td>
-                </tr>
-                <tr>
-                    <td>9%</td>
-                    <td class="td2">II.Hoche</td>
-                </tr>
-                <tr>
-                    <td>9%</td>
-                    <td class="td2">III.Saint Louis</td>
-                </tr>
-                <tr>
-                    <td>13%</td>
-                    <td class="td2">IV.Janson de Sailly</td>
-                </tr>
-                <tr>
-                    <td>26%</td>
-                    <td class="td2">V.Fénelon Sainte-Marie</td>
-                </tr>
-                <tr>
-                    <td>45%</td>
-                    <td class="td2">VI.Paul Valery</td>
-                </tr>
-            </tbody>
+        <p class="titre-histoire"> Notre histoire</p>
+        <div id="boite-histoire">
+            <p class="texte-histoire"> Nous sommes deux jeunes développeurs ayant eu des difficultés afin de trouver une école post-bac en tant qu'éléve ayant pris la spécialités Nsi. Nous avons donc choisi pour aider ces jeunes qui pourraient avoir les même problèmes que nous de mettre en places ce site internet pemettant aux jeunes de Paris de s'orienter avec plus de faciliter. Pour cela nous avons recueilli de nombreuse donné sur les école ce qui nous permet de vous présenter uniquement celles valant le coup.</p>
         </div>
     </div>
 
@@ -148,9 +123,12 @@
         </form>
         <button type="button" id="Passer" onClick="PopUp('Phide')"> Retour </button>
     </div>
+    
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <div class="DeSaintLouis"></div>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 </body>
+
 
 </html>

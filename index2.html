@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="France">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,185 @@
     <link rel="stylesheet" href="styles.css" , type="text/css">
     <title>Next Step</title>
 </head>
-<body>
 
-    <nav id="header">
-        <h1 class="push"><span>NEXT </span><span>STEP </span></h1>
+<body id="test">
+
+    <nav id="header2">
+        <h1 class="push v2"><span>NEXT </span><span>STEP </span></h1>
         <div class="Sommaire"></div>
-        <a href="index.html" class="entete">SPECIALITE</a>
-        <a href="index.html#boite" class="entete">RECOMMENDATION</a>
-        <a href="index2.html" class="entete">CARTE</a>
+        <a href="index.html" class="entete v2">SPECIALITE</a>
+        <a href="index.html#boite" class="entete v2">RECOMMENDATION</a>
+        <a href="index2.html" class="entete v2">CARTE</a>
         <div class="lignes">
-            <div class="l1"></div>
-            <div class="l2"></div>
-            <div class="l3"></div>
+            <div class="l1 c1"></div>
+            <div class="l2 c1"></div>
+            <div class="l3 c1"></div>
         </div>
     </nav>
+    <div class="intro3 vv3">
+        <h1 class="Titre2">Carte des prépas MP2I à Paris</h1>
+    </div>
 
-    <div class="r2"><img class="carte" src="Images/Paris.jpg" alt="Paris" usemap="#image-map">
+    <div class="r2">
+        <img class="carte" src="Images/Paris.jpg" alt="Paris" usemap="#image-map">
 
         <map name="image-map">
-            <area target="_blank" alt="Saint Louis" title="Saint Louis" href="www.google.com" coords="882,734,19" shape="circle">
-            <area target="_blank" alt="Louis le grand" title="Louis le grand" href="www.google.com" coords="996,785,21" shape="circle">
-            <area target="_blank" alt="Janson de Sailly" title="Janson de Sailly" href="www.google.com" coords="394,603,20" shape="circle">
-            <area target="_blank" alt="Fénelon Sainte Marie" title="Fénelon Sainte Marie" href="www.google.com" coords="768,468,20" shape="circle">
-            <area target="_blank" alt="Lycée Paul Valery"  title="Lycée Paul Valery" href="www.google.com" coords="1401,888,20" shape="circle">
+            <area target="" alt="Louis le grand" title="Louis le grand" onclick="carteshow('Louis')" coords="596,471,13"
+                shape="circle">
+            <area target="" alt="Saint Louis" title="Saint Louis" onclick="carteshow('Saint-Louis')" coords="528,439,11"
+                shape="circle">
+            <area target="" alt="Janson de Sailly" title="Janson de Sailly" onclick="carteshow('Janson')"
+                coords="236,360,13" shape="circle">
+            <area target="" alt="Fénélon Sainte-Marie" title="Fénélon Sainte-Marie" onclick="carteshow('Marie')"
+                coords="460,279,12" shape="circle">
+            <area target="" alt="Paul Valéry" title="Paul Valéry" onclick="carteshow('Paul')" coords="839,533,12"
+                shape="circle">
         </map>
+        <div class="info Louis">
+            <div class="div-imagecarte">
+                <label class="titre-lycée">Louis Le Grand</label>
+                <div class="conteneur-carte">
+                    <img class="imagecarte" src="Images/LouisL.jpg" alt="Lycée Louis Legrand">
+                </div>
+            </div>
+            <div class="barrecarte">
+                <div class="barre DeLouis"> </div>
+                <div class="texte-barre"> Chance d'admission</div>
+            </div>
+            <div Class="boite-textecarte">
+                <label class="texte-carte">Le lycée Louis-le-Grand est un établissement d'enseignement secondaire et
+                    supérieur public français.
+                    Il est situé le long de l'ancien cardo de Lutèce, au 123 de la rue Saint-Jacques, dans le 5e
+                    arrondissement de Paris.
+                    Son origine remonte au xvie siècle, puisqu'il fut fondé en 1550 comme collège jésuite dans l'hôtel
+                    parisien de Guillaume du Prat, évêque de Clermont (d'où son nom d'origine : collège de Clermont).
+                    Il est reconstruit de 1885 à 1888.
+                </label>
+            </div>
+
+        </div>
+
+        <div class="info Saint-Louis">
+            <div class="div-imagecarte">
+                <label class="titre-lycée">Saint Louis</label>
+                <div class="conteneur-carte">
+                    <img class="imagecarte" src="Images/Saint-Louis.jpg" alt="Lycée Saint-Louis">
+                </div>
+            </div>
+            <div class="barrecarte">
+                <div class="barre DeSaintLouis"> </div>
+                <div class="texte-barre"> Chance d'admission</div>
+            </div>
+            <div Class="boite-textecarte"><label class="texte-carte">Le lycée Saint-Louis est un établissement public
+                    local d'enseignement situé au 44, boulevard Saint-Michel, dans le 6e arrondissement de Paris
+                    (Quartier latin). Il a comme particularité d'être le seul lycée français public exclusivement
+                    consacré aux classes préparatoires aux grandes écoles (CPGE). De plus, les classes sont
+                    exclusivement scientifiques à l'exception de la classe ECS.</label>
+            </div>
+
+        </div>
+
+
+        <div class="info Janson">
+            <div class="div-imagecarte">
+                <label class="titre-lycée">Janson de Sailly</label>
+                <div class="conteneur-carte">
+                    <img class="imagecarte" src="Images/Janson_de_Sailly.jpg" alt="Lycée Janson">
+                </div>
+            </div>
+            <div class="barrecarte">
+                <div class="barre DeJanson"> </div>
+                <div class="texte-barre"> Chance d'admission</div>
+            </div>
+            <div Class="boite-textecarte"><label class="texte-carte">Le lycée Janson-de-Sailly (JDS ou Janson) figure
+                    parmi les plus grandes cités scolaires de France avec 3 850 élèves et 635 membres du personnel dont
+                    près de 300 enseignants permanents en 2015-2016. C'est aussi l'un des lycées qui accueille le plus
+                    grand nombre d'élèves de classes préparatoires aux grandes écoles en France : 1 270 élèves répartis
+                    en trente classes.Le bâtiment principal (site Janson) est situé dans le 16e arrondissement de Paris,
+                    au 106, rue de la Pompe et s'étend sur 3,5 hectares.</label>
+            </div>
+
+        </div>
+
+        <div class="info Marie">
+            <div class="div-imagecarte">
+                <label class="titre-lycée">Fénelon Sainte-Marie</label>
+                <div class="conteneur-carte">
+                    <img class="imagecarte" src="Images/FSM.jpg" alt="Lycée Fénelon Sainte-Marie">
+                </div>
+            </div>
+            <div class="barrecarte">
+                <div class="barre DeMarie"> </div>
+                <div class="texte-barre"> Chance d'admission</div>
+            </div>
+
+            <div Class="boite-textecarte"><label class="texte-carte">Le lycée Fénelon Sainte-Marie est un établissement
+                    d'enseignement scolaire privé catholique situé dans le 8e arrondissement de Paris. Il accueille les
+                    élèves de la 6e à la terminale (8 classes par niveau), ainsi que des maternelles, primaires et des
+                    classes supérieures (classes préparatoires et BTS).</label>
+            </div>
+
+        </div>
+
+
+        <div class="info Paul">
+            <div class="div-imagecarte">
+                <label class="titre-lycée">Paul Valéry</label>
+                <div class="conteneur-carte">
+                    <img class="imagecarte" src="Images/PV.jpg" alt="Lycée Paul Valéry">
+                </div>
+            </div>
+            <div class="barrecarte">
+                <div class="barre DePaul"> </div>
+                <div class="texte-barre"> Chance d'admission</div>
+            </div>
+            <div Class="boite-textecarte"><label class="texte-carte">Le lycée Paul-Valéry, appelé aussi familièrement
+                    PV, est un établissement public d'enseignement général et technologique du 12e arrondissement de
+                    Paris situé 38, boulevard Soult. C'est un lycée à vocation scientifique, économique, littéraire et
+                    artistique, réputé notamment pour ses sections de formation aux métiers du cinéma et de
+                    l'audiovisuel qui furent les premières créées en France en 1983.
+
+                </label></div>
+
+        </div>
+    </div>
+
+    <div class="espace"></div>
+
+    <div class="boitetab">
+        <table class="tab">
+            <tr>
+                <td class="td3">Accès</td>
+                <td class="td1">Classement Prépas MP2I</td>
+            </tr>
+            <tr>
+                <td>4%</td>
+                <td class="td2">I.Louis Le Grand</td>
+            </tr>
+            <tr>
+                <td>9%</td>
+                <td class="td2">II.Hoche</td>
+            </tr>
+            <tr>
+                <td>9%</td>
+                <td class="td2">III.Saint Louis</td>
+            </tr>
+            <tr>
+                <td>13%</td>
+                <td class="td2">IV.Janson de Sailly</td>
+            </tr>
+            <tr>
+                <td>26%</td>
+                <td class="td2">V.Fénelon Sainte-Marie</td>
+            </tr>
+            <tr>
+                <td>45%</td>
+                <td class="td2">VI.Paul Valery</td>
+            </tr>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
