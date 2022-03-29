@@ -18,7 +18,7 @@
     font-size:large;
   }
 
-  #header2{
+#header2{
     height: 8vh;
     width: auto;
     background-color:rgb(194, 47, 47) ;
@@ -28,7 +28,7 @@
     font-size:large;
   }
   
-  #header3{
+#header3{
     height: 8vh;
     width: auto;
     background-color:#20545f ;
@@ -259,7 +259,6 @@ h1 span {
   margin-left:4.67%;
   position: relative;
   background: none;
-  background-color: #031e31;
 }
 
 

@@ -16,6 +16,20 @@ let opacité_Paul=0;
 let barre3= document.getElementsByClassName('lignes');
 const état=0;
 
+window.addEventListener('load', () => {
+
+    const TL = gsap.timeline({ paused: true });
+    
+    TL.staggerFrom(titreSpans, 1, { top: -50, opacity: 0, ease: "power2.out" }, 0.5)
+    .from(l1, 0.5, {width:0, ease: "power2.out"})
+    .from(l2, 0.5, {width:0, ease: "power2.out"})
+    .from(l3, 0.5, {width:0, ease: "power2.out"})
+    TL.play();
+    placementbarre(document.cookie)
+    console.log(document.cookie);
+});
+
+
 window.onload = function () {
     setTimeout(function () {
         document.getElementById('Erreur').style.display = "none",
@@ -256,17 +270,3 @@ function placementbarre(Moyenne){
         console.log("erreur")
     }
 }
-
-
-window.addEventListener('load', () => {
-
-    const TL = gsap.timeline({ paused: true });
-    
-    TL.staggerFrom(titreSpans, 1, { top: -50, opacity: 0, ease: "power2.out" }, 0.5)
-    .from(l1, 0.5, {width:0, ease: "power2.out"})
-    .from(l2, 0.5, {width:0, ease: "power2.out"})
-    .from(l3, 0.5, {width:0, ease: "power2.out"})
-    TL.play();
-    placementbarre(document.cookie)
-    console.log(document.cookie);
-});
