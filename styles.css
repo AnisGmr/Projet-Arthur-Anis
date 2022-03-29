@@ -484,11 +484,12 @@ h1 span {
 }
 
 .boitetab{
+  background: linear-gradient(to top,#031e31,#324d97);
   display: flex;
   justify-content: center;
   height: 80vh;
   width: auto;
-  border-top: solid 3px black;
+  border-top: solid 3px #031e31;
   border-bottom: solid 3px black;
 }
 
@@ -677,7 +678,6 @@ table.tab .td3 {
 }
 
 .carte{
-  background-color: #031e31;
   position: absolute;
   right: 50vw;
   margin-top:20vh;
@@ -952,7 +952,7 @@ bottom:0%
 
 
 #test{
-  background-color:rgb(11, 38, 70);
+  background: linear-gradient(to bottom,#031e31,#324d97);
   width:auto;
 
 }
