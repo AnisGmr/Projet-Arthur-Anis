@@ -25,13 +25,12 @@ window.addEventListener('load', () => {
     .from(l2, 0.5, {width:0, ease: "power2.out"})
     .from(l3, 0.5, {width:0, ease: "power2.out"})
     TL.play();
-    placementbarre(document.cookie)
-    console.log(document.cookie);
 });
-
 
 window.onload = function () {
     setTimeout(function () {
+        placementbarre(document.cookie),
+        console.log(document.cookie),
         document.getElementById('Erreur').style.display = "none",
         PopUp("Phide")
     },);}
@@ -171,16 +170,16 @@ function placementbarre(Moyenne){
         
         if (différence_Louis>=0){
             document.querySelector(".DeLouis").style.left="90%",
-            document.querySelector(".DeLouis")[1].style.left="90%";
+            document.querySelector(".DeLouis").style.left="90%";
         }
         else if (différence_Louis>=-1){
             document.querySelector(".DeLouis").style.left="70%",
-            document.querySelector(".DeLouis")[1].style.left="70%";
+            document.querySelector(".DeLouis").style.left="70%";
             
         }
         else if (différence_Louis>=-2){
             document.querySelector(".DeLouis").style.left="50%",
-            document.querySelector(".DeLouis")[1].style.left="50%";
+            document.querySelector(".DeLouis").style.left="50%";
         }
         else if (différence_Louis<-2){
             console.log("louis")
@@ -270,3 +269,9 @@ function placementbarre(Moyenne){
         console.log("erreur")
     }
 }
+
+
+window.addEventListener('load', () => {
+    placementbarre(document.cookie)
+    console.log(document.cookie);
+});

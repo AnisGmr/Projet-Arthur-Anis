@@ -261,13 +261,13 @@ h1 span {
   background: none;
 }
 
-
 .b0{
-  height : 45vh;
-  width : 43vw;
+  height : 98%;
+  width : 100%;
   border-radius : 10px 10px 10px 10px;
   border: solid 3px #031e31;
   position: absolute;
+  left: 0;
   z-index: 1;
 }
 
@@ -316,7 +316,6 @@ h1 span {
   
   background: #FFF;
   border-radius: 10px;
-  padding:2vw;
   z-index: 2;
   overflow: hidden;
 }
@@ -360,7 +359,7 @@ h1 span {
 .rr1:hover{
   position: absolute;
   width: 96%;
-  height: 96%;
+  height: 94%;
   position: absolute;
   top: 2%;
   right: 2%;
@@ -371,7 +370,7 @@ h1 span {
 .rr2:hover{
   position: absolute;
   width: 96%;
-  height: 96%;
+  height: 94%;
   position: absolute;
   top: 2%;
   right: 2%;
@@ -382,7 +381,7 @@ h1 span {
 .rr3:hover{
   position: absolute;
   width: 96%;
-  height: 96%;
+  height: 94%;
   position: absolute;
   top: 2%;
   right: 2%;
@@ -393,7 +392,7 @@ h1 span {
 .rr4:hover{
   position: absolute;
   width: 96%;
-  height: 96%;
+  height: 94%;
   position: absolute;
   top: 2%;
   right: 2%;
